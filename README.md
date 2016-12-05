@@ -4,17 +4,18 @@ This image provides [VoyantServer](https://github.com/sgsinclair/VoyantServer) a
 
 ## Running
 
-Fire up docker, map cotainer port 8080 to host port 8080.
+Fire up docker, mapping cotainer port 8080 to host port 8080.
 
 ```
 $ docker run -d --name voyant -p 8080:8080 sepastian/voyant:latest
 ```
 
+
 You can now access Voyant tools on your local machine at http://localhost:8080.
 
 ### Nginx
 
-Next is an example configuration of Nginx to forward requests to your.server.com/voyant to http://localhost:8080. This may come in handy if you want to server Voyant tools to a broader public, on port 80 (HTTP) instead of port 8080 (which may be blocked by your firewall).
+Next is an example configuration of Nginx to forward requests to your.server.com/voyant to http://localhost:8080. This may come in handy if you want to serve Voyant tools to a broader public, on port 80 (HTTP) instead of port 8080 (which may be blocked by your firewall).
 
 Note: the path `/voyant` cannot be changed, because Tomcat has been configured to server the Voyant app there. You are free to substitute any valid URL for your.server.com.
 
