@@ -16,7 +16,7 @@ You can now access Voyant tools on your local machine at http://localhost:8080/v
 
 Next is an example configuration of Nginx to forward requests to your.server.com/voyant to http://localhost:8080/voyant. This may come in handy if you want to serve Voyant tools to a broader public, on port 80 (HTTP) instead of port 8080 (which may be blocked by your firewall).
 
-Note: the path `/voyant` cannot be changed, because Tomcat has been configured to server the Voyant app there. You are free to substitute any valid URL for your.server.com.
+Note: the path `/voyant` cannot be changed, because Tomcat has been configured to serve the Voyant app there. You are free to substitute any valid URL for your.server.com.
 
 ```
 # /etc/nginx/sites-enabled/default, normally a symlink to /etc/nginx/sites-available/default
