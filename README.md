@@ -36,3 +36,9 @@ server {
     # other paths/sites.
 }
 ```
+
+Restart Nginx with
+
+```
+sudo service nginx restart
+```
